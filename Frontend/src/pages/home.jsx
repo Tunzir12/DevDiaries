@@ -1,6 +1,7 @@
 
 const Home = () => {
   return (
+    <div className='p-10'>
         <div className="grid grid-cols-4">
             {/**Jumbotron on homepage if not logged in */}
             <div className="col-span-3 text-left">
@@ -10,19 +11,23 @@ const Home = () => {
 
             {/**register form with log in link */}
             <div className="col-span-1">
+                <div className="center">
+                    <h3>Create an Account!</h3>
+                </div>
                 <div className="grid grid-cols-2 gap-2">
-                    <div className="col-span-1 space-y-2">
-                        <label htmlFor="FirstName:">First Name</label>
-                        <input type="text" name="fname" id="fname" className="rounded-lg w-auto" />
+                    <div className="col-span-1">
+                        <input type="text" name="fname" id="fname" placeholder="First Name" className="rounded-lg w-auto" />
                     </div>
                     <div className="col-span-1">
-                        <label htmlFor="LastName:">Last Name</label>
-                        <input type="text" name="fname" id="lname" className="rounded-lg w-auto" />
+                        <input type="text" name="lname" id="lname" placeholder="Last Name" className="rounded-lg w-auto" />
+                    </div>
+                    <div className="col-span-2">
+                        <input type="email" name="email" id="email" placeholder="Email" />
                     </div>
                 </div>
             </div>
         </div>
-
+    </div>
   )
 }
 

@@ -1,6 +1,10 @@
+import Navbar from "../comp/navbar"
+
 const Profile = () => {
   return (
-    <div>Profile</div>
+    <div>
+        <Navbar />
+    </div>
   )
 }
 
