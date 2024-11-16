@@ -1,8 +1,7 @@
 
 const Home = () => {
   return (
-    <div className='h-screen bg-sky-600'>
-        <div className="grid grid-cols-4 p-10">
+        <div className="grid grid-cols-4">
             {/**Jumbotron on homepage if not logged in */}
             <div className="col-span-3 text-left">
                 <h1 className="text-3xl">Welcome to DevDiaries!</h1>
@@ -23,7 +22,7 @@ const Home = () => {
                 </div>
             </div>
         </div>
-    </div>
+
   )
 }
 

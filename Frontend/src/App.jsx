@@ -5,7 +5,10 @@ function App() {
 
   return (
     <>
+    <div className="h-screen bg-blue-900">
       <Home />
+    </div>
+
     </>
   );
 }
